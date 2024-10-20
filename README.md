@@ -1,6 +1,6 @@
 # Password Generator
 
-Using parameters that the user specifies, this Java application creates secure passwords. Because it uses an alphabet with 88 characters instead of 64, the generated passwords are more visually striking and robust.
+Using parameters that the user specifies, this Java application creates secure passwords. Because it uses an alphabet with 88 characters instead of 64, the generated passwords are  both structurally unique and strong.
 
 ## Features
 
