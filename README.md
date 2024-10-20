@@ -1,30 +1,30 @@
 # Password Generator
 
-This Java application generates secure passwords based on user-defined parameters. It utilizes a unique 88-character alphabet, making the generated passwords more visually aggressive and stronger compared to standard 64-character sets.
+Using parameters that the user specifies, this Java application creates secure passwords. Because it uses an alphabet with 88 characters instead of 64, the generated passwords are more visually striking and robust.
 
 ## Features
 
-- **Password Length**: Users can specify a password length between 16 and 50 characters, with a recommendation for lengths greater than 22 characters.
-- **Password Generation**: Users can choose how many passwords to generate (up to 100). 
-- **Strong Passwords**: The application ensures that the first character of each password is a letter and prevents consecutive characters from being numerically adjacent or repeating.
+   - **Password Length**: Users can enter a password that is between 16 and 50 characters long, while longer passwords over 22 characters are advised.
+   - **Password Generation**: Users are able to select up to 100 passwords to be generated.
+   - **Strong Passwords**: The program makes sure that every password begins with a letter and doesn't allow characters to repeat or be numerically near to one another.
 
 ## Character Set
 
-The application uses a visually interesting 88-character alphabet:
+The 88-character alphabet used in the program is visually appealing:
 
 `!"#$%&'()*+,-./23456789:;<=>?@ABCDEFGHJKLMNO PRSTUVWXYZ[]^_abcdefghijkmnopqrstuvwxyz{|}~`
 
 
 ## Password Count
 
-The total number of possible passwords of lengths ranging from 16 to 50 characters using the specified alphabet is approximately **1.69×10^97**, making it extremely difficult to crack.
+With the given alphabet, there are roughly 1.69×10^97 possible password lengths between 16 and 50 characters, making it very challenging to crack.
 
 ## How to Use
 
 1. Run the program.
-2. Enter a desired password length (between 16 and 50 characters).
+2. Choose the length of your password (between 16 and 50 characters).
 3. Specify the number of passwords to generate (up to 100).
-4. The application will output the generated passwords.
+4. The created passwords will be printed in the terminal.
 
 ## Example
 ```
@@ -40,6 +40,6 @@ Generating 5 passwords:
 
 ## Conclusion
 
-This Password Generator is a powerful tool for creating secure passwords that meet modern security standards. Its unique character set and generation logic ensure a high degree of randomness and strength, making it suitable for a variety of applications.
+This Password Generator is a powerful tool for creating strong passwords that adhere to current security standards. It can be used in many different applications because of its distinct character set and generating logic, which guarantee a high degree of randomness and strength.
 
 
