@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class passwdGen {
+public class PasswdGen {
 
     public static String generatePassword(int len) {
 
@@ -25,17 +25,17 @@ public class passwdGen {
         do {
             firstChar = allChars.get(random.nextInt(allChars.size()));
         }   while (!Character.isLetter(firstChar));
-        passwd.appent(firstChar);
+        passwd.append(firstChar);
 
         while (passwd.length() < len) {
-            char nextChar;
+            char nextChar = allChars.get(random.nextInt(allChars.size()));
             boolean valid = false;
 
             while (!valid) {
                 nextChar = allChars.get(random.nextInt(allChars.size()));
 
                 if (passwd.indexOf(String.valueOf(nextChar)) == -1 &&
-                    (password.length() == 0 ||
+                    (passwd.length() == 0 ||
                     Math.abs(passwd.charAt(passwd.length() -1) - nextChar) != 1)) {
                         valid = true;
                     }
