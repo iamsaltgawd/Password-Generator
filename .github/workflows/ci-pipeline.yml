@@ -1,0 +1,27 @@
+name: CI/CD with Podman
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install Podman
+        run: |
+          sudo apt update
+          sudo apt install -y podman
+
+      - name: Build container
+        run: podman build -t passwdapp .
+
+      - name: Run container
+        run: podman run -d -p 8080:80 --name passwdapp-container passwdapp
+
+      - name: Check if container is running
+        run: podman ps
